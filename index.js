@@ -66,6 +66,23 @@ app.listen(3000, function () {
             console.log(err);
         } else {
             console.log('database connected')
+            const createTableQuery = `
+                    CREATE TABLE IF NOT EXISTS school_info (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    name VARCHAR(255) NOT NULL,
+                    address VARCHAR(255) NOT NULL,
+                    latitude FLOAT NOT NULL,
+                    longitude FLOAT NOT NULL
+                )
+            `;
+            connection.query(createTableQuery, (err) => {
+                if (err) {
+                    console.log("Error while creating table: ", err);
+                } else {
+                    console.log("Table school_info created/already exists");
+                }
+            })
+
         }
     })
 })
