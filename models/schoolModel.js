@@ -19,15 +19,31 @@ connection.query(createTableQuery, (err) => {
 });
 
 
-const addSchool = (schoolData, callback) => {
-    const query = 'INSERT INTO school_info (name, address, latitude, longitude) VALUES (?, ?, ?, ?)';
-    connection.query(query, [schoolData.name, schoolData.address, schoolData.latitude, schoolData.longitude], callback);
-};
+const addSchool = (schoolData) => {
+    return new Promise((resolve, reject) => {
+        const query = 'INSERT INTO school_info (name, address, latitude, longitude) VALUES (?, ?, ?, ?)';
+        connection.query(query, [schoolData.name, schoolData.address, schoolData.latitude, schoolData.longitude], (err, results) => {
+            if (err) {
+                return reject(err);
+            }
+            resolve(results);
+        })
+    })
+}
 
-const listSchools = (callback) => {
-    const query = 'SELECT * FROM school_info';
-    connection.query(query, callback);
-};
+const listSchools = () => {
+    return new Promise((resolve, reject) => {
+        const query = 'SELECT * FROM school_info';
+        connection.query(query, (err, results) => {
+            if (err) {
+                return reject(err);
+            }
+            resolve(results)
+        })
+    })
+}
+
+
 
 module.exports = {
     addSchool,
