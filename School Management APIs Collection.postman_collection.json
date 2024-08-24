@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "aa231b40-2451-4034-88b2-014fa3fb0681",
-		"name": "School Management APIs",
+		"_postman_id": "e15794b1-d574-4959-80fe-6b0e9732a9d8",
+		"name": "School Management APIs Collection",
 		"description": "APIs for testing the school management APIs",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "34452548"
@@ -25,12 +25,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/listSchools?latitude=100&longitude=50",
-					"protocol": "http",
+					"raw": "https://find-schools.vercel.app/api/v1/listSchools?latitude=100&longitude=50",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"find-schools",
+						"vercel",
+						"app"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"v1",
@@ -54,22 +55,14 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"name\": \"ABaD\",\n        \"address\": \"barpathar12\",\n        \"latitude\": 1.1212323,\n        \"longitude\": 222.22\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:3000/api/v1/listSchools?latitude=100&longitude=50",
-							"protocol": "http",
+							"raw": "https://find-schools.vercel.app/api/v1/listSchools?latitude=100&longitude=50",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"find-schools",
+								"vercel",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"v1",
@@ -128,22 +121,14 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"name\": \"ABaD\",\n        \"address\": \"barpathar12\",\n        \"latitude\": 1.1212323,\n        \"longitude\": 222.22\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:3000/api/v1/listSchools?latitude=25&longitude=150",
-							"protocol": "http",
+							"raw": "https://find-schools.vercel.app/api/v1/listSchools?latitude=25&longitude=150",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"find-schools",
+								"vercel",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"v1",
@@ -202,22 +187,14 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"name\": \"ABaD\",\n        \"address\": \"barpathar12\",\n        \"latitude\": 1.1212323,\n        \"longitude\": 222.22\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:3000/api/v1/listSchools?latitude=130&longitude=10",
-							"protocol": "http",
+							"raw": "https://find-schools.vercel.app/api/v1/listSchools?latitude=130&longitude=10",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"find-schools",
+								"vercel",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"v1",
@@ -276,22 +253,14 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n        \"name\": \"ABaD\",\n        \"address\": \"barpathar12\",\n        \"latitude\": 1.1212323,\n        \"longitude\": 222.22\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:3000/api/v1/listSchools?latitude=1.2&longitude=2.3",
-							"protocol": "http",
+							"raw": "https://find-schools.vercel.app/api/v1/listSchools?latitude=1.2&longitude=2.3",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"find-schools",
+								"vercel",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"v1",
@@ -362,12 +331,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/addSchool",
-					"protocol": "http",
+					"raw": "https://find-schools.vercel.app/api/v1/addSchool",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"find-schools",
+						"vercel",
+						"app"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"v1",
@@ -391,12 +361,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/v1/addSchool",
-							"protocol": "http",
+							"raw": "https://find-schools.vercel.app/api/v1/addSchool",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"find-schools",
+								"vercel",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"v1",
@@ -455,12 +426,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/v1/addSchool",
-							"protocol": "http",
+							"raw": "https://find-schools.vercel.app/api/v1/addSchool",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"find-schools",
+								"vercel",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"v1",
@@ -519,12 +491,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/v1/addSchool",
-							"protocol": "http",
+							"raw": "https://find-schools.vercel.app/api/v1/addSchool",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"find-schools",
+								"vercel",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"v1",
