@@ -1,4 +1,4 @@
-// controllers/schoolController.js
+
 const School = require('../models/schoolModel');
 const { distance } = require('../utils/distance');
 
