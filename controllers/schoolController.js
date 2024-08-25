@@ -22,9 +22,6 @@ const addSchool = async (req, res) => {
 const listSchools = async (req, res) => {
     const { latitude, longitude } = req.query;
 
-    if (!latitude || !longitude) {
-        return res.status(400).json({ error: 'Latitude and longitude are required' });
-    }
 
     try {
         const results = await School.listSchools();
